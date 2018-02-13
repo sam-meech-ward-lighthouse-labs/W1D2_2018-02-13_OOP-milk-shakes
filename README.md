@@ -29,6 +29,8 @@ We don't use * with primatives. (unless we want to reference them)
 
 Reference types are any types with a *
 
+![Referece vs value types](https://i.imgur.com/sKIH7pW.jpg)
+
 ### C functions
 
 You can only return one single variable out of a c function or objective-c method. 
@@ -84,3 +86,4 @@ Define a property using the `@property` keyword, and put it in the interface.
 * enumerate
 
 
+[Milk Shake](https://www.youtube.com/watch?v=pGL2rytTraA)
