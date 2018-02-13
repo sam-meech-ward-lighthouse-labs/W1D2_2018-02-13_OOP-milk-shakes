@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		226FC1642033529300F2D780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 226FC1632033529300F2D780 /* main.m */; };
+		226FC16C2033641700F2D780 /* MilkShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 226FC16B2033641700F2D780 /* MilkShake.m */; };
+		226FC16F203364A800F2D780 /* Boys.m in Sources */ = {isa = PBXBuildFile; fileRef = 226FC16E203364A800F2D780 /* Boys.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		226FC1602033529300F2D780 /* JazzHands */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JazzHands; sourceTree = BUILT_PRODUCTS_DIR; };
 		226FC1632033529300F2D780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		226FC16A2033641700F2D780 /* MilkShake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MilkShake.h; sourceTree = "<group>"; };
+		226FC16B2033641700F2D780 /* MilkShake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MilkShake.m; sourceTree = "<group>"; };
+		226FC16D203364A800F2D780 /* Boys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boys.h; sourceTree = "<group>"; };
+		226FC16E203364A800F2D780 /* Boys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boys.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				226FC1632033529300F2D780 /* main.m */,
+				226FC16A2033641700F2D780 /* MilkShake.h */,
+				226FC16B2033641700F2D780 /* MilkShake.m */,
+				226FC16D203364A800F2D780 /* Boys.h */,
+				226FC16E203364A800F2D780 /* Boys.m */,
 			);
 			path = JazzHands;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226FC16F203364A800F2D780 /* Boys.m in Sources */,
 				226FC1642033529300F2D780 /* main.m in Sources */,
+				226FC16C2033641700F2D780 /* MilkShake.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
