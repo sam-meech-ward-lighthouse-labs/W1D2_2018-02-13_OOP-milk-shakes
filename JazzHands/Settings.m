@@ -1,23 +1,20 @@
 //
-//  Boys.m
+//  Settings.m
 //  JazzHands
 //
 //  Created by Sam Meech-Ward on 2018-02-13.
 //  Copyright © 2018 lighthouse-labs. All rights reserved.
 //
 
-#import "Boys.h"
 #import "Settings.h"
 
-@implementation Boys
+@implementation Settings
 
-- (instancetype)init
-{
-  self = [super init];
-  if (self) {
-    [Settings numberOfHands];
-  }
-  return self;
++ (double)speed {
+  return 7.0;
+}
++ (int)numberOfHands {
+  return 4;
 }
 
 @end

@@ -11,6 +11,13 @@
 
 @interface MilkShake : NSObject
 
++ (int)totalMilkshakesCreated;
+
++ (instancetype)milkShake;
+
++ (instancetype)milkShakeWithThickness:(int)thickness andBetterness:(BOOL)better andName:(NSString *)name;
+
+- (instancetype)initWithThickness:(int)thickness andBetterness:(BOOL)better andName:(NSString *)name;
 // - (return type)method-name:(parameter-type)parameter-name;
 - (BOOL)bringToYard:(NSArray *)boys;
 
@@ -18,6 +25,7 @@
 
 @property int thickness;
 @property BOOL isBetterThanYours;
+@property NSString *name;
 
 //- (void)someMethod:(NSString *)string anotherParameter:(NSString *)anotherString;
 

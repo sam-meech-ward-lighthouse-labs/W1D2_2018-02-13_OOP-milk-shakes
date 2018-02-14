@@ -54,10 +54,13 @@ int main(int argc, const char * argv[]) {
 //    MilkShake *milkShake = [MilkShake alloc]; // allocates memory space for the object.
 //    milkShake = [milkShake init]; // Initializes the state of the object.
 //    [MilkShake new];
-    MilkShake *milkShake = [[MilkShake alloc] init];
-    MilkShake *milkShake2 = [[MilkShake alloc] init];
-    milkShake.thickness = 7;
-    milkShake.isBetterThanYours = YES;
+    NSLog(@"totalMilkshakesCreated: %i",[MilkShake totalMilkshakesCreated]);
+    
+    MilkShake *milkShake = [MilkShake milkShakeWithThickness:7 andBetterness:YES andName:@""];
+    MilkShake *milkShake2 = [MilkShake milkShake];
+    
+    NSLog(@"totalMilkshakesCreated: %i",[MilkShake totalMilkshakesCreated]);
+    
     [milkShake shake];
     [milkShake2 shake];
     
@@ -81,27 +84,36 @@ int main(int argc, const char * argv[]) {
       NSLog(@"Damn Right!!!");
     }
     
-    // Old way of creating an nsnumber
-    [[NSNumber alloc] initWithInt:1];
+    NSLog(@"Milkshake2: %i", milkShake2.thickness);
+    NSLog(@"Milkshake1: %i", milkShake.thickness);
     
-    NSArray *arrayOfPrimatives = @[@YES, @2];
-    
-    [arrayOfPrimatives[0] boolValue];
-    if (arrayOfPrimatives.count > 1) {
-      [arrayOfPrimatives[1] boolValue];
-    }
-    
-    for (int i = 0; i < arrayOfPrimatives.count; i++) {
-      NSLog(@"%@", arrayOfPrimatives[i]);
-    }
-    
-    for (NSNumber *number in arrayOfPrimatives) {
-      NSLog(@"%@", number);
-    }
-    
+//    // Old way of creating an nsnumber
+//    [[NSNumber alloc] initWithInt:1];
+//
+//    NSArray *arrayOfPrimatives = @[@YES, @2];
+//
+//    [arrayOfPrimatives[0] boolValue];
+//    if (arrayOfPrimatives.count > 1) {
+//      [arrayOfPrimatives[1] boolValue];
+//    }
+//
+//    for (int i = 0; i < arrayOfPrimatives.count; i++) {
+//      NSLog(@"%@", arrayOfPrimatives[i]);
+//    }
+//
+//    for (NSNumber *number in arrayOfPrimatives) {
+//      NSLog(@"%@", number);
+//    }
+//
 //    [arrayOfPrimatives enumerateObjectsWithOptions:(NSEnumerationOptions) usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 //      <#code#>
 //    }];
+    
+    MilkShake *pancake = [[MilkShake alloc] initWithThickness:0 andBetterness:NO andName:@"🤗"];
+    
+    NSLog(@"%@", pancake);
+    NSLog(@"%@", milkShake);
+    NSLog(@"%@", milkShake2);
   }
   return 0;
 }
